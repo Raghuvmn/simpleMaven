@@ -6,6 +6,8 @@ git 'https://github.com/Raghuvmn/simpleMaven'
 }
 stage('Compile-Package')
 {
- sh 'mvn package'
+def mvnHome= tool name: 'Maven', type: 'maven'
+sh "${mvnHome}/bin/mvn package"
 }
+
 }
