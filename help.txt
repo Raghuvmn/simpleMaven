@@ -1,1 +1,60 @@
-this is help file
+this is help file--
+
+-->>>Git remote url creation.
+cd /outside_of_any_repo
+mkdir  my_remote.git
+cd     my_remote.git
+git init --bare
+cd  /your_path/original_repo
+git remote add origin /outside_of_any_repo/my_remote.git
+
+-->>> git clone the repository
+git clone ssh://git1@116.247.75.250:27186/home/git1/oppo/mk110.git
+
+-->>>Git creation  branch.
+
+git checkout -b feature/your_branch_name
+git push origin feature/your_branch_name
+
+-->>>Git changes push to server.
+--> to check the changes
+git diff .
+-->to check which file has been modified.
+git status
+--> to remove unneccsary files
+rm filename including the path.
+git add .
+git commit -m "your changes details."
+git push origin feature/your_branch_name
+
+-->>>Git changes pull from server.
+git status
+--> if you need to keep the chages in branch.
+git stash
+--> if you don't want local changes.
+git checkout .
+
+git pull origin feature/your_branch_name
+
+-->>>Delete feature /temporary branches after task completed. 
+-->Before delete a branch, don’t use the desired delete branch as working branch.
+git branch –d feature/your_branch_name
+git push origin --delete feature/your_branch_name
+
+-->>> to create a tag
+git tag -a PreRelease/2_20_001_002_20181208 -m "1st release for tee test to factory"
+--> to show the tags
+git tag 
+--> push the tags to server
+git push --tags  // push tag to git server
+
+-->>> discard the changes
+git reset –hard
+
+-->>> git stash apply
+git stash list
+--> get the stash ID and provide below
+git stash apply stash_id
+
+
+ 
