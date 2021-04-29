@@ -1,0 +1,5 @@
+[2:03 PM, 4/29/2021] Chanu: You need new branch
+[2:04 PM, 4/29/2021] Chanu: And do some commits on the new Branch
+[2:04 PM, 4/29/2021] Chanu: Then do the rebase with master
+[2:04 PM, 4/29/2021] Chanu: In master branch also do a commit
+[2:05 PM, 4/29/2021] Chanu: The do rebase
